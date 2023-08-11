@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    	<meta name="description" content="Light and Dark Theme">
+    	<meta name="keywords" content="theme, light, dark mode">
 
 		<title>Macey's Background Picker</title>
 
@@ -13,35 +15,32 @@
 	</head>
 	<body>
 
-		<div class="main">
-			<div class="tops">
-				<h4>Macey's Cafe</h4>
-				<div class="toggleButton" id="themeBtn">
-					<span id="btnText">Dark</span>
-					<img src="img/crescent.png" id="btnIcon" alt="this">
-				</div>
-				
-			</div>
-
-			<div class="content">
-				<div class="imgPart">
-					<div class="partOne">
-						<img src="img/Coffee-cup-icon.png" alt="">
-				        <img src="img/coffee.jpeg" alt="">
+		<div class="container">
+			<div class="main">
+				<div class="tops">
+					<h4>MACEY'S CAFE</h4>
+					<div class="toggleButton" id="themeBtn">
+						<span class="meIcons"><ion-icon name="sunny"></ion-icon></span>
+						<span class="meIcons"><ion-icon name="moon"></ion-icon></span>
 					</div>
 					
-					<div class="partTwo">
-						<img src="img/coffeelongcup.png" alt="">
-				        <img src="img/coffee-icon.jpeg" alt="">
-					</div>
-				    
 				</div>
+	
+				<div class="content">
+					<div class="imgPart">						
+						<img src="img/Coffee-cup-icon.png" alt="">
+						<img src="img/coffee.jpeg" alt="">					
+						<img src="img/coffee-icon.jpeg" alt="">			
+					</div>
+										
+				</div>
+				<p class="para">...reward for every penny</p>
 				
-			    <p>...reward for every penny</p>
 			</div>
-			
 		</div>
-		
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

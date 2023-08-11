@@ -13,7 +13,7 @@
 :root{
   --background-color: rgb(226, 224, 224);
   --text-color: #555;
-  --title-color: #000;
+  --title-color: #071338;
   --part-color: rgb(250, 245, 245);
   --first-color: #4864ff;
   --shade-color: 0 0 10px rgba(0, 0, 0, 0.37);
@@ -22,7 +22,7 @@
 .darkTheme{
   --background-color: rgb(29, 26, 26);
   --text-color: #d1cfcf;
-  --title-color: #fff;
+  --title-color: #5fcff1;
   --part-color: #302f2f;
   --shade-color: 0 0 10px rgba(113, 114, 119, 0.767);
 }
@@ -40,66 +40,61 @@ body{
 
 /* ///////////////////////////////////////// */
 
-img{
-  width: 100px;
-  background: black;
-  border-radius: 10px;
-}
-
-.partOne, .partTwo{
+.container{
   display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-  padding: 5% 3%;
-  width: 60%;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .main{
-  margin: 10px auto;
-  width: 40%;
-  /* background-color: rgb(0, 238, 255); */
-  padding-top: 3%;
-  border-radius: 0 10%;
+  width: 400px;
   box-shadow: var(--shade-color);
-  border: 1px solid rgb(194, 190, 190);
+  height: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.main > *{
+  padding: 1rem;
 }
 
 .tops{
-  background-color: var(--part-color);
   display: flex;
   justify-content: space-between;
-  height: 40px;
   align-items: center;
-  padding: 5px 20px;
+  background: #a5a5a5;
+  color: #071338;
+  height: 4rem;
 }
 
-.tops img{
-  width: 15px;
-  height: 15px;
-  display: inline;
+.toggleButton{
+  background: #071338;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: .3rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
 }
 
-.content p{
-  text-align: right;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  padding: 0 8px 8px 0 ;
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
 }
 
-#themeBtn:hover{
-  cursor:pointer;
-  /* background-color: #dfdfe2;
-  color: #1b1b32; */
-}
-
-#themeBtn{
-  border: 1.5px solid var(--text-color);
-  padding: 2px 7px;
-  border-radius: 20px;
-}
 img{
-  background-color: rgb(160, 49, 49);
+  width: 5rem;
+  border: 1px solid #071338;
+  border-radius: 5px;
+}
+
+.para{
+  margin: 0;
+  text-align: right;
 }
 /******************************************
 /* ADDITIONAL STYLES
