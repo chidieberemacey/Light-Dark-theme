@@ -96,6 +96,30 @@ img{
   margin: 0;
   text-align: right;
 }
+
+/*  */
+
+@media (max-width: 500px){
+  html{
+    font-size: 12px;
+  }
+  .main{
+    width: 80%;
+  }
+}
+
+@media (max-width: 290px){
+  .imgPart{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    margin-top: 10px;
+  }
+  .para{
+    text-align: left;
+  }
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
